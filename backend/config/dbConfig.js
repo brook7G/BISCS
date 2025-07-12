@@ -1,9 +1,11 @@
 // This is where we configure our database
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const connectDB = async () => {
   try {
-    const MONGO_URI = `mongodb+srv://birukefekadu632:birukewengel633@cluster0.jsd6pqd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+    const MONGO_URI = process.env.MONGO_URI;
     const conn = await mongoose.connect(MONGO_URI, {
       family: 4,
     });
