@@ -1,0 +1,278 @@
+.initateClearanceContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  animation: slideUp 1s ease-out 0s 1 both;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.initateClearanceHeader {
+  color: white;
+  text-align: center;
+  margin: 18px;
+  animation: slideUp 1s ease-out 0s 1 both;
+}
+
+.initiationClearances {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  margin: 12px;
+  border-radius: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.initiationClearances:hover {
+  border: 2px solid #2e72d8;
+}
+.popupContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.popup {
+  width: 80%;
+  background-color: rgb(67, 67, 67);
+  border-radius: 6px;
+  animation: getBigger 0.3s ease-out 0s 1 both;
+  padding: 12px;
+}
+.closeIconContainer {
+  color: lightcoral;
+  float: right;
+  margin: 4px;
+  font-size: 18px;
+}
+.centerText {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  width: 90%;
+  margin: 16px auto;
+}
+.deadlindDateContainer {
+  width: 50%;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+.initiateClearanceButton {
+  background: linear-gradient(to top, #80deea 50%, black 50%);
+  background-position: 100% 100%;
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: 0.5vw;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  /* transition: all 0.3s ease-out; */
+}
+.deadlineLabel {
+  font-size: 16px;
+}
+.initiateClearanceButton:hover {
+  /* background-color: black; */
+  animation: slideDownButton 1s ease-out 0s 1 both;
+  color: white;
+}
+@keyframes slideDownButton {
+  0% {
+    background-position: 100% 200%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes getBigger {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+  .initateClearanceHeader {
+    margin-top: 16vh;
+  }
+}

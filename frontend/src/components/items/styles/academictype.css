@@ -1,0 +1,316 @@
+.academicContainer {
+  margin: auto;
+  padding: 16px;
+  max-width: 500px;
+  width: 80%;
+  animation: slideDown 1s ease-in-out 0s 1 forwards;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(1%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.stepOneHeaderText {
+  color: white;
+  text-align: center;
+  font-size: x-large;
+}
+.academictypesContainer {
+  height: auto;
+  background-color: black;
+  margin: 32px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.academicType {
+  background-color: blueviolet;
+  color: white;
+  width: 42%;
+  height: 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  margin: 8px;
+  cursor: auto;
+}
+.academicType:hover {
+  background-color: rgb(93, 31, 151);
+}
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.customAcademicTypeInput {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  margin: 0;
+}
+.addCustomAcademicTypeButton {
+  border: none;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background-color: white;
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+}
+.addCustomAcademicTypeButton:hover {
+  box-shadow: 0 0 8px rgb(115, 23, 202);
+}
+.nextButtonContainer {
+  text-align: center;
+  color: white;
+  margin-bottom: 16px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.previousStepButton {
+  margin-bottom: 16px;
+  padding: 20px 44px;
+  background: linear-gradient(to right, blueviolet 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: auto;
+}
+.nextStepButton {
+  margin-bottom: 16px;
+  padding: 20px 44px;
+  background: linear-gradient(to right, blueviolet 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.nextStepButton:hover {
+  animation: poundingEffect 1s ease-in 0s 1 forwards;
+}
+.previousStepButton:hover {
+  animation: reversepoundingEffect 1s ease-in 0s 1 forwards;
+}
+@keyframes poundingEffect {
+  0% {
+    background-position: 100% bottom;
+  }
+  33.33% {
+    background-position: 0% bottom;
+  }
+  66.66% {
+    background-position: 15% bottom;
+  }
+  100% {
+    background-position: 0% bottom;
+  }
+}
+@keyframes reversepoundingEffect {
+  0% {
+    background-position: 0% bottom;
+  }
+  33.33% {
+    background-position: 100% bottom;
+  }
+  66.66% {
+    background-position: 85% bottom;
+  }
+  100% {
+    background-position: 100% bottom;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .stepOneHeaderText {
+    font-size: xx-large;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+.academicTypeText {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.closeIconContainer {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.closeIconContainer:hover {
+  color: rgb(255, 0, 0);
+}

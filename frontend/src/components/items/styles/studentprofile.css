@@ -1,0 +1,556 @@
+.profileHeaderContainer {
+  color: white;
+  background-color: #3de982;
+  width: 100%;
+  margin: auto;
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("https://expertvagabond.com/wp-content/uploads/antarctica-ice-arch.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideDown 1s ease-in-out 0s 1 both;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.OfficerHeaderContainer {
+  color: white;
+  width: 100%;
+  margin: auto;
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../../../assets/ImageOne.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideDown 1s ease-in-out 0s 1 both;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.barcode {
+  width: 150px;
+  height: 150px;
+}
+.BarcodeContainer {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studentProfileContainer {
+  width: 90%;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -26px;
+  left: 4%;
+  display: flex;
+  align-items: center;
+}
+.studentProfilePicture {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/student.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContainer {
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  display: none;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -65.5px;
+  z-index: -1;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.stuentFullName {
+  color: white;
+  font-size: 1rem;
+  margin: 0 0 8px 8px;
+}
+.studentMenuHeader {
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+.studentMenuItem {
+  background: none;
+}
+.studentMenuItemActive {
+  color: #286cd3;
+}
+
+.studentMenuItem:hover {
+  color: #286cd3;
+  background: none;
+}
+.studentMobilMenuContainer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+.studentMobileiconList {
+  background: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.listItemMobileIcon {
+  background: none;
+  margin: 0;
+  font-size: 1.1rem;
+  margin-right: auto;
+  transition: all 0.3s linear;
+}
+.waveturn {
+  /* animation: wave 0.5s linear 0 1 both; */
+  transform: translateY(-8px);
+}
+
+.listItemMobileIconActive {
+  color: dodgerblue;
+  transform: translateY(-3px);
+}
+.listItemMobileIcon:active,
+.listItemMobileIcon:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* .listItemMobileIcon:hover {
+  color: dodgerblue;
+  transform: translateY(-3px);
+} */
+
+.studentPageContent {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  margin-top: 36px;
+  margin-bottom: 65px;
+  border: 1px solid dodgerblue;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: white;
+  animation: slideUp 1s ease-out 0s 1 both;
+}
+.CleranceDetailContainer {
+  width: 75%;
+  margin: auto;
+  padding: 1px 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.deadLineDateShow {
+  color: rgb(248, 56, 56);
+  margin-left: auto;
+  text-align: end;
+  margin: 8px 12px;
+  font-size: 12px;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.choiceButtonHolder {
+  margin: auto;
+  width: 90%;
+  max-width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: slideDown 1s ease-in-out 0s 1 both;
+}
+.choiceButton {
+  width: 45%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 4px;
+  font-size: 16px;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.previouschoiceButton {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 4px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: padding-left 0.5s;
+}
+.previouschoiceButton::before {
+  content: "";
+  position: absolute;
+  top: 38%;
+  left: 18px;
+  border: solid dodgerblue;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition: opacity 0.3s, left 0.5s;
+}
+.choiceButton:hover {
+  background-color: black;
+}
+.previouschoiceButton:hover {
+  padding-left: 24px;
+}
+.previouschoiceButton:hover::before {
+  left: 12px;
+}
+
+.custom-field {
+  position: relative;
+  font-size: 14px;
+  border-top: 20px solid transparent;
+  margin-bottom: 5px;
+  display: inline-block;
+  --field-padding: 12px;
+}
+
+.custom-field input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: var(--field-padding);
+  border-radius: 3px;
+  color: white;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 22px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  background-color: #161414;
+  color: #aaa;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-field input.dirty + .placeholder,
+.custom-field input:focus + .placeholder,
+.custom-field input:not(:placeholder-shown) + .placeholder {
+  top: -10px;
+  font-size: 10px;
+  color: #222;
+}
+
+/* ONE */
+.custom-field.one input {
+  background: none;
+  border: 2px solid black;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-field.one input + .placeholder {
+  left: 8px;
+  padding: 0 5px;
+}
+
+.custom-field.one input.dirty,
+.custom-field.one input:not(:placeholder-shown),
+.custom-field.one input:focus {
+  border-color: dodgerblue;
+  transition-delay: 0.1s;
+}
+
+.custom-field.one input.dirty + .placeholder,
+.custom-field.one input:not(:placeholder-shown) + .placeholder,
+.custom-field.one input:focus + .placeholder {
+  top: 0;
+  font-size: 10px;
+  color: white;
+  /* background: #fff; */
+  width: auto;
+}
+.loanitemtypeDropDown {
+  background-color: #161414;
+  color: white;
+  width: 95%;
+  margin-top: 10px;
+}
+.loanitemHolder {
+  margin: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: fadeOpacityIn 2s ease-out 0s 1 both;
+}
+.logoutContainer {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 2;
+  cursor: pointer;
+  color: rgb(255, 49, 49);
+  font-size: 20px;
+}
+@keyframes fadeOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loanitemHolder:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+.loanedItemImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px soild dodgerblue;
+}
+.loanitemTexts {
+  width: 80px;
+  overflow-x: auto;
+  margin: 0 3px;
+}
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .stuentFullName {
+    font-size: 1.5rem;
+  }
+  .barcode {
+    width: 200px;
+    height: 200px;
+  }
+  .profileHeaderContainer {
+    border-radius: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+  .BarcodeContainer {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+  .BarcodeContainer {
+    width: 200px;
+    height: 200px;
+  }
+  .menuContainer {
+    display: flex;
+  }
+  .studentMobilMenuContainer {
+    display: none;
+  }
+  .studentPageContent {
+    margin: auto;
+    border: 1px solid dodgerblue;
+    width: 66.6%;
+    margin-top: 76px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}

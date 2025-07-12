@@ -1,0 +1,304 @@
+.landingPageHeaderContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #161414;
+  z-index: 1;
+}
+.logoHolder {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navbarHodler {
+  color: dodgerblue;
+  padding: 2px 4px;
+}
+.navigationListMobile {
+  position: sticky;
+  top: 63px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.98);
+  width: 100%;
+}
+.navigationList {
+  background-color: none;
+  display: none;
+}
+.navigationItem {
+  background: none;
+  color: white;
+  list-style-type: none;
+}
+
+.navigationItem:hover,
+.navigationActive {
+  color: dodgerblue;
+}
+.heroContainer {
+  width: 90%;
+  margin: 24px auto;
+  height: 86vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.heroContent {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
+.heroText {
+  text-align: center;
+  margin: 10px 0;
+}
+.secondpageContainer {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.secondPageContent {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 22px;
+}
+.center-text {
+  text-align: center;
+  margin: 40px 36px 0;
+}
+.left-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.benefitsPage {
+  width: 91%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+.benefitContent {
+  width: 100%;
+  color: white;
+  padding: 8px 0;
+}
+.benefitContentHeader {
+  text-align: center;
+  text-justify: inter-word;
+}
+.toolsUsed {
+  width: 90%;
+  margin: 32px auto;
+  padding: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tools {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+  .heroContent {
+    align-items: flex-start;
+    height: auto;
+  }
+  .secondPageContent {
+    height: auto;
+  }
+  .heroText {
+    text-align: start;
+  }
+  .left-text {
+    margin-left: 38px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+  .navigationList {
+    display: flex;
+  }
+  .navbarHodler {
+    display: none;
+  }
+  .navigationListMobile {
+    display: none;
+  }
+  .moreInfoText {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+  .landingPageHeaderContainer {
+    width: 58.5%;
+  }
+  .heroContainer {
+    width: 58.5%;
+  }
+  .secondpageContainer {
+    width: 58.5%;
+  }
+}

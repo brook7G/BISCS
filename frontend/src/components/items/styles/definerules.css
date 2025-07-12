@@ -1,0 +1,54 @@
+.draggable {
+  cursor: move;
+  color: white;
+}
+.reorderclearance {
+  margin: 6px;
+}
+.PreRequestContainer {
+  height: auto;
+  background-color: black;
+  margin: 16px 6px;
+  padding: 4px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.preRequests {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 4px;
+  padding: 8px 10px;
+}
+.appealCheckBox {
+  margin-right: 12px;
+}
+.clearanceFieldNamePreRequest {
+  width: 110px;
+  white-space: nowrap;
+}
+
+li {
+  margin: 6px;
+  padding: 16px 12px;
+  background: linear-gradient(to right, dodgerblue 50%, black 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+}
+li:hover {
+  cursor: pointer;
+  animation: leftPoundingEffect 0.5s ease-out 0s 1 forwards;
+}
+.studentAppealIconContainer {
+  display: inline;
+}
+
+@keyframes leftPoundingEffect {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left bottom;
+  }
+}
